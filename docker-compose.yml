@@ -1,0 +1,9 @@
+services:
+  app:
+    image: ghcr.io/billoneta/hogwarts_backend_991:latest
+    container_name: mongodb_labp
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    restart: always
